@@ -4,11 +4,11 @@ import * as SearchController from '../controllers/searchController'
 const router = Router();
 
 router.get('/', PageController.home);
-router.get('/', PageController.caes);
-router.get('/', PageController.gatos);
-router.get('/', PageController.peixes);
+router.get('/caes', PageController.caes);
+router.get('/gatos', PageController.gatos);
+router.get('/peixes', PageController.peixes);
 
-router.get('/', SearchController.busca);
+router.get('/busca', SearchController.busca);
 
 
 export default router;
